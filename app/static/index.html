@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAN Zoning Manager</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23302A32'/%3E%3Ccircle cx='11.5' cy='11.5' r='2.5' fill='%2314F2AF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <svg class="logo" viewBox="0 0 540 170" role="img" aria-label="Arc"><path d="M506.302 106.236C523.231 106.236 535.633 118.418 535.633 135.567C535.633 152.715 523.231 164.898 506.302 164.898C489.373 164.898 476.971 152.715 476.971 135.567C476.971 118.418 489.373 106.236 506.302 106.236Z" fill="#14F2AF"/><path d="M130.186 26.4744L134.274 4.19501H169.422V165.227H134.274L130.186 141.987C119.814 156.117 103.187 167.093 79.6457 167.093C36.0198 167.12 4 135.731 4 84.56C4 33.3887 36.0198 2 79.3439 2C103.215 2 119.513 12.344 130.213 26.4744H130.186ZM44.7998 84.8618C44.7998 114.056 61.4271 134.14 87.4929 134.14C113.559 134.14 129.884 114.056 129.884 85.1636C129.884 56.2717 113.559 35.2545 87.4929 35.2545C61.4271 35.2545 44.7998 55.6681 44.7998 84.8618Z" fill="white"/><path d="M235.327 4.19501L239.415 28.3676C247.894 14.2372 260.46 4.19501 286.197 4.19501H293.742V40.6048H277.115C249.183 40.6048 239.443 60.6892 239.443 85.4929V165.227H199.576V4.19501H235.355H235.327Z" fill="white"/><path d="M303.427 84.8618C303.427 34.9527 335.777 2.30182 385.988 2.30182C428.681 2.30182 455.679 25.5415 461.962 63.2135H420.23C416.471 45.9552 404.206 35.2819 385.384 35.2819C360.278 35.2819 344.255 55.6955 344.255 84.8892C344.255 114.083 360.251 134.167 385.384 134.167C404.206 134.167 416.443 123.192 420.23 105.907H461.962C456.008 143.578 427.446 167.12 384.753 167.12C334.542 167.12 303.455 135.429 303.455 84.8618H303.427Z" fill="white"/></svg>
+    <span class="app">SAN Zoning Manager</span>
+    <div id="ctx" class="ctx"></div>
+    <span class="ro" title="This tool only reads from switches. It never sends configuration.">Read-only to switches</span>
+  </div>
+</header>
+<div class="shell">
+  <nav class="side" id="nav" aria-label="Sections"></nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+<dialog id="dlg"><form method="dialog" id="dlgForm"><h2 id="dlgTitle"></h2><div id="dlgBody"></div><p class="dlg-err" id="dlgErr" role="alert"></p><div class="dlg-actions"><button type="button" class="btn" id="dlgCancel">Cancel</button><button type="submit" class="btn primary" id="dlgOk">Save</button></div></form></dialog>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<footer class="foot"><span>Arc (U.K.) Systems Ltd</span><span>www.arcsystems.co.uk</span></footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

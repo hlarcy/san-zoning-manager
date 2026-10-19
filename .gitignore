@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+# Runtime data (known_hosts, exports) stays local
+data/*
+!data/.gitkeep
